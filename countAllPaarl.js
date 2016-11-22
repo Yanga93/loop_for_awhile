@@ -9,8 +9,8 @@ if (regNum[i].startsWith('CJ')){
     countPaarl.push(regNum[i]);
 }
   }
-  console.log(countPaarl.length);
-    return countPaarl;
+  //console.log(countPaarl.length);
+    return countPaarl.length;
 };
   var result = countAllPaarl("CJ 3625, CA 4615, DR 12 TY GP, CJ 5636, DRT 122 L");
-    //assert.equal(result, 2);
+    assert.equal(result, 2);
