@@ -1,4 +1,4 @@
-//const assert = require('assert');
+const assert = require('assert');
   var allPaarl = function(regCar){
     var regNum = regCar.split(", ");
 
@@ -13,4 +13,4 @@ if (regNum[i].startsWith('CJ')){
     return allRegNum;
 };
   var result = allPaarl("CJ 3625, CA 4615, DR 12 TY GP, CJ 5636, DRT 122 L");
-    //assert.equal(result, 'CJ 3625, CJ 5636');
+    assert.deepEqual(result, ['CJ 3625', 'CJ 5636']);
